@@ -1,2 +1,12 @@
 - 1002 record we have different date format, so it was a consistency issue, we changed the format to this YYYY-MM-DD.
+- 1003 record Customer_email is blank, it was a completenss	issue, we lookup similar name present in other rows to fill in the blank space
+- 1004 record Customer_name is blank, it was a Completenss issue, we recover the name from email - Sam Lee
+- 1004 & 1005	Same Customer, date, product are duplicate values, for Uniqueness, we had to Keep 1004 and drop 1005
+- 1006 record quantity is negative (-2)	Validity	keep the row but flagged and exclude from revenue totals
+- 1007 record different date format,it is a consistency issue, date need to be in order for consistency and it was fixed
+- 1008 record qty is huge - outlier (150)	Validity	we need business confirmation - if its bulk order
+- 1010 record casing is lower not consistent, it was a consistency issue, we had to standardize the title case Classic Lemonade
+- 1011 & 1012	records Same Customer, date, product - are duplicate values, for Uniqueness, we	had to keep 1011 and drop 1012
+- 1014 record Customer_name is blank, it was a completenss issue, so the customer_name is set to unknown
+- 1017 record unit price is empty, it was a Completenss issue	Price can be derived Mint Lemonade -> 3
   
